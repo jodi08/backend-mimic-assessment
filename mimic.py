@@ -58,7 +58,7 @@ def print_mimic(mimic_dict, start_word):
     while i < 200:
         if start_word in mimic_dict:
             next_word = random.choice(mimic_dict[start_word])
-            random_word += " " + next_word + " "
+            random_word += " " + next_word
             start_word = next_word
             i += 1
         else:
